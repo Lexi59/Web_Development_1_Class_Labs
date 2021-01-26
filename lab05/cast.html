@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VanderWilt - Lab 5</title>
+    <!--For custom font -->
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/rsz_emojiblitzrapunzel.png"/>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel = "stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#menu").slicknav({prependTo: "#mobile_menu"});
+        });
+    </script>
+</head>
+<body>
+<header>
+    <img src="images/tangled_banner.png" alt="Tangled Movie Poster">
+    <h1>Tangled</h1>
+    <h2>They're taking adventure to new lengths. Get tangled up.</h2>
+</header>
+<nav id="mobile_menu"></nav>
+<nav id = "menu">
+    <ul>
+        <li><a href = 'index.html'>Home</a></li>
+        <li><a href="plot.html">Plot</a></li>
+        <li><a class = 'current' href="cast.html">Cast</a></li>
+        <li><a href="awards.html">Awards</a> </li>
+    </ul>
+</nav>
+<main>
+    <section>
+        <h2>Message a Character!</h2>
+        <form action="confirm.html" method="get" name="contact_form" id = "contact_form">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" autofocus required><br>
+                <label for="first_name">First Name:</label>
+                <input type="text" name = "first_name" id="first_name" required><br>
+                <label for="last_name">Last Name:</label>
+                <input type="text" name = "last_name" id="last_name" required><br>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" name = "phone" id="phone" required placeholder="please include your 10 digit phone number" title="must match 999-999-9999"
+                       pattern="\d{3}[\-]\d{3}[\-]\d{4}"><br>
+                <label for="character">Character:</label>
+                <select name="character" id="character">
+                    <option value="rapunzel">Rapunzel</option>
+                    <option value="flynn_rider">Flynn Rider</option>
+                    <option value="mother_gothel">Mother Gothel</option>
+                </select><br>
+                <input type="submit" id="submit" value="Send Email">
+
+        </form>
+    </section>
+    <aside>
+        <ul>
+            <li><a href="https://youtu.be/kRXmAIHYQR4">When Will My Life Begin?</a></li>
+            <li><a href="https://youtu.be/-7jWt3JvJto">Mother Knows Best</a></li>
+            <li><a href="https://youtu.be/tTuwo_TqlhQ">I've Got a Dream</a></li>
+            <li><a href="https://youtu.be/ILRs2r6lcHY">I See the Light</a></li>
+        </ul>
+    </aside>
+</main>
+<footer>
+    &copy; 2021 Alexis VanderWilt
+</footer>
+</body>
+</html>

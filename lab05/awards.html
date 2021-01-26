@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VanderWilt - Lab 5</title>
+    <!--For custom font -->
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/rsz_emojiblitzrapunzel.png"/>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel = "stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#menu").slicknav({prependTo: "#mobile_menu"});
+        });
+    </script>
+</head>
+<body>
+<header>
+    <img src="images/tangled_banner.png" alt="Tangled Movie Poster">
+    <h1>Tangled</h1>
+    <h2>They're taking adventure to new lengths. Get tangled up.</h2>
+</header>
+<nav id="mobile_menu"></nav>
+<nav id = "menu">
+    <ul>
+        <li><a href = 'index.html'>Home</a></li>
+        <li><a href="plot.html">Plot</a></li>
+        <li><a href="cast.html">Cast</a></li>
+        <li><a class = 'current' href="awards.html">Awards</a> </li>
+    </ul>
+</nav>
+<main>
+    <section>
+        <h2>Accolades</h2>
+        <h3>This film has been nominated for a number of awards</h3>
+        <figure>
+            <figcaption>Tangled Movie Awards</figcaption>
+            <table aria-label="Tangled Movie Awards">
+                <thead>
+                <tr>
+                    <th scope="col">Group</th>
+                    <th scope="col">Year</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Result</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>83rd Academy Awards</td>
+                    <td rowspan="8">2010</td>
+                    <td>Best Original Song ("I See the Light")</td>
+                    <td rowspan="10" class="nominated">Nominated</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">38th Annie Awards</td>
+                    <td>Best Animated Feature Film</td>
+                </tr>
+                <tr>
+                    <td>Writing in a Feature Production (Dan Fogelman)</td>
+                </tr>
+                <tr>
+                    <td>British Academy Children's Awards (BAFTA) </td>
+                    <td>Favourite Film</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Broadcast Film Critics Association Awards 2010</td>
+                    <td>Best Animated Feature Film</td>
+                </tr>
+                <tr>
+                    <td>Best Song ("I See the Light")</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">68th Golden Globe Awards</td>
+                    <td>Best Animated Feature Film</td>
+                </tr>
+                <tr>
+                    <td>Best Song ("I See the Light")</td>
+                </tr>
+                <tr>
+                    <td>Golden Reel Awards</td>
+                    <td rowspan="3">2011</td>
+                    <td>Best Sound Editing: Music in a Musical Feature Film</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">54th Grammy Awards</td>
+                    <td>Best Compilation Soundtrack for Visual Media</td>
+                </tr>
+                <tr>
+                    <td>Best Song Written For Visual Media ("I See the Light")</td>
+                    <td rowspan="3" class = "won">Won</td>
+                </tr>
+                <tr>
+                    <td>Las Vegas Film Critics Society</td>
+                    <td>2010</td>
+                    <td>Best Song ("I See the Light")</td>
+                </tr>
+                <tr>
+                    <td>National Movie Awards 2011</td>
+                    <td>2011</td>
+                    <td>Animation</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Phoenix Film Critics Society Awards</td>
+                    <td rowspan="3">2010</td>
+                    <td>Best Animated Film</td>
+                    <td rowspan="6" class="nominated">Nominated</td>
+                </tr>
+                <tr>
+                    <td>Best Original Song ("I've Got A Dream")</td>
+                </tr>
+                <tr>
+                    <td>37th Saturn Awards</td>
+                    <td>Best Animated Film</td>
+                </tr>
+                <tr>
+                    <td>2011 Teen Choice Awards</td>
+                    <td>2011</td>
+                    <td>Choice Animated Movie Voice (Zachary Levi)</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">9th Visual Effects Society Awards</td>
+                    <td rowspan="2">2010</td>
+                    <td>Outstanding Animation in an Animated Feature Motion Picture</td>
+                </tr>
+                <tr>
+                    <td>Outstanding Animated Character in an Animated Feature Motion Picture ("Rapunzel")</td>
+                </tr>
+            </table>
+        </figure>
+    </section>
+    <aside>
+        <ul>
+            <li><a href="https://youtu.be/kRXmAIHYQR4">When Will My Life Begin?</a></li>
+            <li><a href="https://youtu.be/-7jWt3JvJto">Mother Knows Best</a></li>
+            <li><a href="https://youtu.be/tTuwo_TqlhQ">I've Got a Dream</a></li>
+            <li><a href="https://youtu.be/ILRs2r6lcHY">I See the Light</a></li>
+        </ul>
+    </aside>
+</main>
+<footer>
+    &copy; 2021 Alexis VanderWilt
+</footer>
+</body>
+</html>

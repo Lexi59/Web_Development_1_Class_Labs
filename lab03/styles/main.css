@@ -1,0 +1,128 @@
+/*  Color Palette
+    Gold - #dfc911
+    Tan - #ffd199
+    Pink - #febab8
+    Dark Purple - #bb31d8
+    Light Purple - #cea9d6
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+    background-image: radial-gradient(circle, rgba(223,201,17,1) 15%, rgba(187,49,216,1) 49%, rgba(206,169,214,1) 100%);
+    background-image: -moz-radial-gradient(circle, rgba(223,201,17,1) 15%, rgba(187,49,216,1) 49%, rgba(206,169,214,1) 100%);
+    background-image: -o-radial-gradient(circle, rgba(223,201,17,1) 15%, rgba(187,49,216,1) 49%, rgba(206,169,214,1) 100%);
+    background-image: -webkit-radial-gradient(circle, rgba(223,201,17,1) 15%, rgba(187,49,216,1) 49%, rgba(206,169,214,1) 100%);
+}
+
+body{
+    font-family: 'Berkshire Swash', cursive;
+    width: 960px;
+    border: 3px solid #febab8;
+    box-shadow: 5px 5px rgba(254,186,184,0.75);
+    margin: 2em auto;
+    border-radius: 10px;
+    background-color: rgb(255,255,255,0.6);
+}
+
+p{
+    padding: .5em;
+}
+
+/* Header styles */
+header img{
+    float:left;
+    width: 25%;
+}
+header{
+    border-bottom: 2px solid #bb31d8;
+    text-align: center;
+    padding: 1em 2em;
+}
+header h1{
+    padding: .5em;
+
+}
+header h2{
+    padding: .5em;
+}
+/* Nav Menu styles */
+.current{
+    background-color: #bb31d8;
+    color: #f6bb73;
+}
+.current:hover, .current:focus{
+    color:white;
+}
+#menu a{
+    float:left;
+    margin: 0;
+    padding: .25em 0;
+    width: 25%;
+    border: none;
+    border-bottom: 2px solid #bb31d8;
+}
+
+/* Main styles */
+main{
+    clear:left;
+    padding: 2em;
+}
+main::first-letter{
+    font-size: 150%;
+}
+a{
+    text-decoration: none;
+    color: #bb31d8;
+    display: block;
+    border: 1px solid #bb31d8;
+    margin: .5em;
+    padding: 1em .25em;
+    text-align: center;
+    background-color: rgba(255,255,255,.7);
+}
+a:hover, a:focus{
+    color: #d160e9;
+    font-style: italic;
+}
+ul{
+    list-style-type: none;
+}
+aside{
+    padding: .5em;
+    float:left;
+    width: 25%;
+}
+section{
+    float:right;
+    width: 70%;
+    padding-bottom: 1em;
+}
+/* Styles for plot page */
+section img{
+    float: left;
+    margin: 2em;
+}
+#cast img{
+    width: 25%;
+    margin: 0.25em;
+}
+
+section ul {
+    clear: left;
+}
+
+/* Footer Styles */
+footer{
+    clear: both;
+    padding: 1em;
+    font-size: 75%;
+    text-align: center;
+    border-top: 2px solid #bb31d8;
+    background-color: rgba(254,186,184,100);
+    border-radius: 0 0 10px 10px;
+}
